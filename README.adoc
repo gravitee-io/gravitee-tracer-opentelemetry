@@ -1,0 +1,84 @@
+
+= OpenTelemetry Tracer
+
+ifdef::env-github[]
+image:https://img.shields.io/static/v1?label=Available%20at&message=Gravitee.io&color=1EC9D2["Gravitee.io", link="https://download.gravitee.io/#/gravitee-tracer-opentelemetry/"]
+image:https://img.shields.io/badge/License-Apache%202.0-blue.svg["License", link="https://github.com/gravitee-io/gravitee-tracer-opentelemetry/blob/master/LICENSE.txt"]
+image:https://img.shields.io/badge/semantic--release-conventional%20commits-e10079?logo=semantic-release["Releases", link="https://github.com/gravitee-io/gravitee-tracer-opentelemetry/releases"]
+image:https://circleci.com/gh/gravitee-io/gravitee-tracer-opentelemetry.svg?style=svg["CircleCI", link="https://circleci.com/gh/gravitee-io/gravitee-tracer-opentelemetry"]
+image:https://f.hubspotusercontent40.net/hubfs/7600448/gravitee-github-button.jpg["Join the community forum", link="https://community.gravitee.io?utm_source=readme", height=20]
+endif::[]
+
+== Description
+The `otel` tracer is used to collect tracing information from the gateway and send them to a compatible OpenTelemetry exporter (Jaeger, Datadog, Elastic APM, NewRelic, ...).
+
+== Installation
+
+You can build the tracer plugin from the source or you can download it from https://download.gravitee.io/#graviteeio-apim/plugins/tracers/graviteeio-tracer-opentelemetry/[here]
+
+Then, put the ZIP file in your gateway plugins folder. (https://docs.gravitee.io/apim/3.x/apim_installguide_gateway_configuration.html#configure_the_plugins_repository[More information])
+
+== Compatibility with APIM
+
+|===
+| Plugin version | APIM version
+| 1.x            | 4.0 to latest
+|===
+
+== Configuration
+
+In your APIM Gateway configuration file, you have to add a new block of settings, so the plugin will be able to send tracing data to an exporter.
+
+=== Example
+.Simple configuration
+[source, yaml]
+----
+services:
+  tracing:
+    enabled: true
+    type: otel
+    otel:
+      url: grpc://localhost:4317
+----
+
+.Full configuration
+[source, yaml]
+----
+services:
+  tracing:
+    enabled: (default is false)
+    type: otel
+    otel:
+      url: (default is grpc://localhost:4317)
+      type: grpc or http/protobuf
+      compression: none or gzip
+      traces:
+        enabled: (default is true)
+      metrics:
+        enabled: (default is false)
+      headers:
+        authorization: my_auth_header
+      ssl:
+        enabled: (default is false)
+        ## following fields are only mandatory if ssl.enabled is true
+        trustall: (default is false)
+        verifyHostname: (default is true)
+        keystore:
+          type: (default is null) # Supports jks, pem, pkcs12
+          path: (default is null)
+          password: (default is null)
+        truststore:
+          type: (default is null) # Supports jks, pem, pkcs12
+          path: (default is null)
+          password: (default is null)
+----
+
+[TIP]
+====
+Don't forget to activate the tracing service with:
+[source, yaml]
+----
+  tracing:
+    enabled: true
+----
+====
