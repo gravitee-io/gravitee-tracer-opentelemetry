@@ -40,7 +40,7 @@
         <opentelemetry-instrumentation-api.version>1.33.3</opentelemetry-instrumentation-api.version>
         <opentelemetry-api-incubator.version>1.39.0-alpha</opentelemetry-api-incubator.version>
         <awaitility.version>4.2.0</awaitility.version>
-        <testcontainers.version>1.19.3</testcontainers.version>
+        <testcontainers.version>1.19.8</testcontainers.version>
         <maven-plugin-assembly.version>3.6.0</maven-plugin-assembly.version>
         <maven-plugin-javadoc.version>3.5.0</maven-plugin-javadoc.version>
 
