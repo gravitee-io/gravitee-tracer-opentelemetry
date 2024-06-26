@@ -24,7 +24,7 @@
     <parent>
         <groupId>io.gravitee</groupId>
         <artifactId>gravitee-parent</artifactId>
-        <version>22.1.1</version>
+        <version>22.0.19</version>
     </parent>
 
     <groupId>io.gravitee.tracer</groupId>
@@ -41,7 +41,7 @@
         <opentelemetry-api-incubator.version>1.39.0-alpha</opentelemetry-api-incubator.version>
         <awaitility.version>4.2.0</awaitility.version>
         <testcontainers.version>1.19.3</testcontainers.version>
-        <maven-plugin-assembly.version>3.6.0</maven-plugin-assembly.version>
+        <maven-plugin-assembly.version>3.7.1</maven-plugin-assembly.version>
         <maven-plugin-javadoc.version>3.5.0</maven-plugin-javadoc.version>
 
         <!-- Property used by the publication job in CI-->
