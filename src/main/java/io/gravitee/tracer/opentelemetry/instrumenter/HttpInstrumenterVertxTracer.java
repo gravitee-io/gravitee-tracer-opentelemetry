@@ -530,7 +530,11 @@ public class HttpInstrumenterVertxTracer implements InstrumenterVertxTracer<Http
                     return result;
                 }
             };
-            return headers.addAll(httpRequest.headers());
+            MultiMap requestHeaders = httpRequest.headers();
+            if (requestHeaders != null) {
+                return headers.addAll(requestHeaders);
+            }
+            return headers;
         }
 
         @Override
