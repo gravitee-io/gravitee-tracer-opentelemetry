@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/gravitee-io/gravitee-tracer-opentelemetry/compare/1.0.0...1.0.1) (2024-09-05)
+
+
+### Bug Fixes
+
+* NPE when no headers in the request ([#14](https://github.com/gravitee-io/gravitee-tracer-opentelemetry/issues/14)) ([e256240](https://github.com/gravitee-io/gravitee-tracer-opentelemetry/commit/e256240b0555dadda71a2acbb3b4017f0b0cc85e))
+
 # 1.0.0 (2024-06-19)
 
 

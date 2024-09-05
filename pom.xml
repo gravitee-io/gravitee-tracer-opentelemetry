@@ -29,7 +29,7 @@
 
     <groupId>io.gravitee.tracer</groupId>
     <artifactId>gravitee-tracer-opentelemetry</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Gravitee.io - Tracing - OpenTelemetry OTLP</name>
 
