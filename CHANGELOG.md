@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/gravitee-io/gravitee-tracer-opentelemetry/compare/1.0.1...1.0.2) (2025-01-13)
+
+
+### Bug Fixes
+
+* bump gravitee bom version ([0b28964](https://github.com/gravitee-io/gravitee-tracer-opentelemetry/commit/0b28964e7ca70a3e950de013506e2a9ff555c261))
+
 ## [1.0.1](https://github.com/gravitee-io/gravitee-tracer-opentelemetry/compare/1.0.0...1.0.1) (2024-09-05)
 
 
