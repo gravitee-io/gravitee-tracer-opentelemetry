@@ -34,7 +34,7 @@
     <name>Gravitee.io - Tracing - OpenTelemetry OTLP</name>
 
     <properties>
-        <gravitee-bom.version>8.1.16</gravitee-bom.version>
+        <gravitee-bom.version>8.2.0</gravitee-bom.version>
         <gravitee-node-api.version>6.4.4</gravitee-node-api.version>
         <opentelemetry-instrumentation-bom-alpha.version>1.33.3-alpha</opentelemetry-instrumentation-bom-alpha.version>
         <opentelemetry-instrumentation-api.version>1.33.3</opentelemetry-instrumentation-api.version>
