@@ -9,6 +9,15 @@ image:https://circleci.com/gh/gravitee-io/gravitee-tracer-opentelemetry.svg?styl
 image:https://f.hubspotusercontent40.net/hubfs/7600448/gravitee-github-button.jpg["Join the community forum", link="https://community.gravitee.io?utm_source=readme", height=20]
 endif::[]
 
+== Compatibility with APIM
+=== This plugin is longer part APIM distribution 4.6 and above
+https://github.com/gravitee-io/gravitee-node/tree/master/gravitee-node-opentelemetry[Follow this link to get details about Open Telemetry support in Gravitee]
+
+|===
+| Plugin version | APIM version
+| 1.x            | 4.0 to 4.5
+|===
+
 == Description
 The `otel` tracer is used to collect tracing information from the gateway and send them to a compatible OpenTelemetry exporter (Jaeger, Datadog, Elastic APM, NewRelic, ...).
 
@@ -18,12 +27,7 @@ You can build the tracer plugin from the source or you can download it from http
 
 Then, put the ZIP file in your gateway plugins folder. (https://documentation.gravitee.io/apim/overview/plugins[More information])
 
-== Compatibility with APIM
 
-|===
-| Plugin version | APIM version
-| 1.x            | 4.0 to latest
-|===
 
 == Configuration
 
