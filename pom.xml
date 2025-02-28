@@ -37,7 +37,7 @@
         <gravitee-bom.version>8.2.0</gravitee-bom.version>
         <gravitee-node-api.version>6.4.4</gravitee-node-api.version>
         <opentelemetry-instrumentation-bom-alpha.version>1.33.3-alpha</opentelemetry-instrumentation-bom-alpha.version>
-        <opentelemetry-instrumentation-api.version>1.33.3</opentelemetry-instrumentation-api.version>
+        <opentelemetry-instrumentation-api.version>2.13.3</opentelemetry-instrumentation-api.version>
         <opentelemetry-api-incubator.version>1.39.0-alpha</opentelemetry-api-incubator.version>
         <awaitility.version>4.2.0</awaitility.version>
         <testcontainers.version>1.20.1</testcontainers.version>
