@@ -1,4 +1,3 @@
-
 = OpenTelemetry Tracer
 
 ifdef::env-github[]
@@ -10,7 +9,7 @@ image:https://f.hubspotusercontent40.net/hubfs/7600448/gravitee-github-button.jp
 endif::[]
 
 == Compatibility with APIM
-=== This plugin is longer part APIM distribution 4.6 and above
+=== This plugin is no longer supported
 https://github.com/gravitee-io/gravitee-node/tree/master/gravitee-node-opentelemetry[Follow this link to get details about Open Telemetry support in Gravitee]
 
 |===
